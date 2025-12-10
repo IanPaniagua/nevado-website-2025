@@ -1,0 +1,197 @@
+[
+  {
+    "name": "TANDOLIN M-80",
+    "description": "Tandolin M-80 es un carbonato de calcio de alta pureza que ha pasado por un proceso de micronización, presentado en forma granular con un color blanco cremoso. Es no combustible pero soluble en agua y ácidos.",
+    "image": "/product-nevado.png",
+    "packaging": "Big Bag 1 tonelada",
+    "application": "Debido a su pureza y contenido de carbonato de calcio, el producto puede ser utilizado en la industria química y alimentaria, pinturas texturizadas, lechadas, adhesivos, entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "96.5 - 98.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Residuo en Tamiz 80",
+          "unit": "%",
+          "range": "30 - 45"
+        },
+        {
+          "description": "Paso a través del Tamiz 80",
+          "unit": "%",
+          "maximum": "15.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TANFIN M-100",
+    "description": "Tanfin M-100 es un carbonato de calcio de alta pureza que ha pasado por un proceso de micronización, presentado en forma granular con un color blanco cremoso. Es no combustible pero soluble en agua y ácidos.",
+    "image": "/product-nevado.png",
+    "packaging": "1 Ton. – Sacos de 40 Kg",
+    "application": "Debido a su pureza y contenido de carbonato de calcio, el producto puede ser utilizado en la industria química y alimentaria, pinturas texturizadas, lechadas, adhesivos, entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "96.5 - 98.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Paso a través del Tamiz 140 (finos)",
+          "unit": "%",
+          "range": "86.0 - 92.0"
+        },
+        {
+          "description": "Humedad (150 °C)",
+          "unit": "%",
+          "range": "0.07 - 0.10"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TIZA MS-325",
+    "description": "Tiza MS-325 es un carbonato de calcio de alta pureza que ha pasado por un proceso de micronizado, se presenta en forma de polvo fino de color semi-blanco.",
+    "image": "/product-nevado.png",
+    "packaging": "Sacos de 40 KG",
+    "application": "Por su pureza y contenido, el producto es utilizado como carga ya que proporciona una adecuada viscosidad en la elaboración de pinturas temples, imprimantes entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "95.0 - 98.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Aspecto",
+          "range": "Polvo fino semi-blanco"
+        },
+        {
+          "description": "Tamiz 325 Retención",
+          "unit": "%",
+          "maximum": "< 1.00"
+        },
+        {
+          "description": "Humedad (150 °C)",
+          "unit": "%",
+          "range": "0.07 - 0.10"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TIZA MT-325",
+    "description": "Tiza MT-325 es un carbonato de calcio de alta pureza que ha pasado por un proceso de micronizado, se presenta en forma de polvo fino de color blanco.",
+    "image": "/product-nevado.png",
+    "packaging": "Sacos de 40 KG",
+    "application": "Por su pureza y contenido, el producto es utilizado como carga ya que proporciona una adecuada viscosidad en la elaboración de pinturas temples, imprimantes entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "97.0 - 98.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Aspecto",
+          "range": "Polvo fino blanco"
+        },
+        {
+          "description": "Tamiz 325 Retención",
+          "unit": "%",
+          "maximum": "< 1.00"
+        },
+        {
+          "description": "Humedad (150 °C)",
+          "unit": "%",
+          "range": "0.07 - 0.10"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TIZA N-40",
+    "description": "Tiza N-40 es un carbonato de calcio de alta pureza que ha pasado por un proceso de micronizado, se presenta en forma de polvo fino de color semi-blanco.",
+    "image": "/product-nevado.png",
+    "packaging": "Sacos de 40 KG",
+    "application": "Por su pureza y contenido de carbonato de calcio, el producto se puede emplear en la elaboración de pinturas látex color, PVC, adhesivos, fraguas, entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "95.0 - 98.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Aspecto",
+          "range": "Polvo de color blanco"
+        },
+        {
+          "description": "Tamiz 400 Retención",
+          "unit": "%",
+          "maximum": "< 1.00"
+        },
+        {
+          "description": "Humedad (150 °C)",
+          "unit": "%",
+          "range": "0.07 - 0.10"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TIZA MT-400",
+    "description": "Tiza MT-400 es un carbonato de calcio de alta pureza que ha pasado por un proceso de micronizado, se presenta en forma de polvo fino de color blanco.",
+    "image": "/product-nevado.png",
+    "packaging": "Sacos de 40 KG",
+    "application": "Por su pureza y contenido de carbonato de calcio, el producto se puede emplear en la elaboración de tuberías de PVC, compuestos de PVC, pinturas premium, papelería, adhesivos, fraguas, vidrios, entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "97.0 - 98.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Aspecto",
+          "range": "Polvo de color blanco"
+        },
+        {
+          "description": "Tamiz 400 Retención",
+          "unit": "%",
+          "maximum": "< 1.00"
+        },
+        {
+          "description": "Humedad (150 °C)",
+          "unit": "%",
+          "range": "0.07 - 0.10"
+        }
+      ]
+    }
+  },
+  {
+    "name": "TIZA MS-1000",
+    "description": "Tiza MS-1000 es un carbonato de calcio de gran blancura y pureza. Se presenta en forma de polvo ultrafino, lo que mejora la dispersión.",
+    "image": "/product-nevado.png",
+    "packaging": "Sacos de 30 KG",
+    "application": "Por su pureza y contenido de carbonato de calcio, el producto se puede emplear en la elaboración de tuberías de PVC, compuestos de PVC, pinturas premium, papelería, adhesivos, fraguas, vidrios entre otros.",
+    "specifications": {
+      "calcium_carbonate": {
+        "unit": "%",
+        "range": "97.0 - 99.0"
+      },
+      "physical_specifications": [
+        {
+          "description": "Aspecto",
+          "range": "Polvo de color blanco"
+        },
+        {
+          "description": "Tamiz 400 Retención",
+          "unit": "%",
+          "range": "0.00"
+        },
+        {
+          "description": "Humedad (150 °C)",
+          "unit": "%",
+          "range": "0.07 - 0.08"
+        }
+      ]
+    }
+  }
+]
