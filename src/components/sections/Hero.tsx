@@ -12,7 +12,7 @@ export function Hero() {
                 <img
                     src="/hero-bg.png"
                     alt="Mineral processing background"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover animate-slow-zoom"
                 />
                 <div className="absolute inset-0 bg-slate-900/60" />
             </div>

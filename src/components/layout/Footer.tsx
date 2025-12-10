@@ -6,7 +6,7 @@ export function Footer() {
                     Copyright &copy; {new Date().getFullYear()} NEVADO. Todos los derechos reservados.
                 </p>
                 <div className="flex gap-4 text-sm font-medium">
-                    <a href="#" className="hover:text-primary transition-colors">Política de Privacidad</a>
+                    <a href="/politica-privacidad" className="hover:text-primary transition-colors">Política de Privacidad</a>
                     <a href="#" className="hover:text-primary transition-colors">Términos y Condiciones</a>
                 </div>
             </div>
