@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge"; // Need to create Badge if Shadcn didn't install it, but usually standard. Wait, I didn't install Badge. I'll rely on simple div or standard classes if Badge is missing, or use a custom div.
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -12,11 +14,29 @@ import {
 import { Product } from "@/types";
 import productsData from "@/data/products.json";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
 
 // Simple Badge component inline or I should install it? I'll use a styled span.
 
 export function Products() {
     const products: Product[] = productsData as Product[];
+    const [showAll, setShowAll] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768); // md breakpoint
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    // Show only 3 products on mobile by default, all on desktop
+    const displayedProducts = (isMobile && !showAll) ? products.slice(0, 3) : products;
+    const hasMore = products.length > 3;
 
     return (
         <section id="products" className="py-20 bg-white">
@@ -29,7 +49,7 @@ export function Products() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {products.map((product, index) => (
+                    {displayedProducts.map((product, index) => (
                         <Card key={index} className="flex flex-col overflow-hidden hover:shadow-xl transition-shadow border-slate-200">
                             <div className="relative h-48 w-full bg-slate-100 flex items-center justify-center p-4">
                                 {/* Fallback image or the actual one. JSON says "product.png" */}
@@ -120,6 +140,21 @@ export function Products() {
                         </Card>
                     ))}
                 </div>
+
+                {/* Show More Button - Only on mobile and when there are more products */}
+                {hasMore && !showAll && (
+                    <div className="mt-12 text-center md:hidden">
+                        <Button
+                            onClick={() => setShowAll(true)}
+                            variant="outline"
+                            size="lg"
+                            className="gap-2"
+                        >
+                            Ver Catálogo Completo
+                            <ChevronDown className="h-4 w-4" />
+                        </Button>
+                    </div>
+                )}
             </div>
         </section>
     );
