@@ -7,11 +7,11 @@ export function About() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-3xl font-bold tracking-tight text-primary mb-4 sm:text-4xl">
-                        Calidad y Confianza Certificada
+                        Calidad y confianza certificada para su industria
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                        En NEVADO, nos dedicamos a procesar y comercializar insumos minerales con los más altos estándares.
-                        Nuestra misión es proveer soluciones químicas industriales que potencien la producción de nuestros clientes.
+                        En NEVADO nos dedicamos al procesamiento y comercialización de insumos minerales bajo los más altos estándares de calidad.
+                        Nuestra misión es proveer soluciones químicas industriales que impulsen la productividad y competitividad de nuestros clientes.
                     </p>
                 </div>
 
@@ -23,7 +23,7 @@ export function About() {
                             </div>
                             <h3 className="text-xl font-bold text-primary mb-3">Calidad Certificada</h3>
                             <p className="text-muted-foreground">
-                                Contamos con certificación <span className="font-semibold text-primary">ISO 9001:2015</span>, garantizando procesos estandarizados y productos de pureza constante.
+                                Contamos con certificación <span className="font-semibold text-primary">ISO 9001:2015</span>, lo que garantiza procesos estandarizados y productos de pureza constante y confiable.
                             </p>
                         </CardContent>
                     </Card>
@@ -35,7 +35,7 @@ export function About() {
                             </div>
                             <h3 className="text-xl font-bold text-primary mb-3">Infraestructura Avanzada</h3>
                             <p className="text-muted-foreground">
-                                Tecnología de punta en micronización y procesamiento para obtener granulometrías precisas y homogéneas.
+                                Tecnología de punta en micronización y procesamiento para obtener granulometrías precisas, homogéneas y consistentes.
                             </p>
                         </CardContent>
                     </Card>
@@ -47,7 +47,7 @@ export function About() {
                             </div>
                             <h3 className="text-xl font-bold text-primary mb-3">Soporte Integral</h3>
                             <p className="text-muted-foreground">
-                                Asesoría técnica especializada y atención comercial enfocada en resolver las necesidades específicas de su industria.
+                                Asesoría técnica especializada y atención comercial cercana, enfocadas en resolver las necesidades específicas de su industria.
                             </p>
                         </CardContent>
                     </Card>
