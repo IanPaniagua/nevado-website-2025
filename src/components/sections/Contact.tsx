@@ -52,15 +52,15 @@ export function Contact() {
             const result = await response.json();
 
             if (response.ok) {
-                setStatus({ type: 'success', message: 'Gracias por contactarnos. Nos pondremos en comunicación a la brevedad.' });
+                setStatus({ type: 'success', message: 'Gracias por contactarnos. Nos pondremos en contacto con usted a la brevedad.' });
                 setFormData({ name: "", company: "", email: "", message: "" });
             } else {
                 console.error("Form error:", result);
-                setStatus({ type: 'error', message: 'Hubo un error al enviar el mensaje. Por favor intente nuevamente.' });
+                setStatus({ type: 'error', message: 'Hubo un error al enviar el mensaje. Por favor, inténtelo nuevamente en unos minutos.' });
             }
         } catch (error) {
             console.error("Submission error:", error);
-            setStatus({ type: 'error', message: 'Error de conexión. Verifique su red.' });
+            setStatus({ type: 'error', message: 'Error de conexión. Por favor, verifique su conexión a internet e inténtelo nuevamente.' });
         } finally {
             setIsSubmitting(false);
         }
@@ -74,9 +74,9 @@ export function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Contact Info */}
                     <div>
-                        <h2 className="text-3xl font-bold tracking-tight text-primary mb-6">Contáctanos</h2>
+                        <h2 className="text-3xl font-bold tracking-tight text-primary mb-6">Contáctenos</h2>
                         <p className="text-lg text-muted-foreground mb-8">
-                            Estamos listos para atender sus requerimientos de insumos minerales con la calidad y puntualidad que su industria necesita.
+                            Estamos listos para atender sus requerimientos de insumos minerales con la calidad, respaldo y puntualidad que su industria necesita.
                         </p>
 
                         <div className="space-y-6">

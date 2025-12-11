@@ -19,10 +19,10 @@ export function Hero() {
 
             <div className="container mx-auto relative z-10 px-4">
                 <h1 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl max-w-4xl mx-auto drop-shadow-lg">
-                    Comercialización de productos químicos e insumos minerales para industrias.
+                    Comercialización de insumos minerales y productos químicos para la industria.
                 </h1>
                 <p className="mb-8 text-lg font-medium text-slate-100 sm:text-xl max-w-2xl mx-auto drop-shadow-md">
-                    Soluciones de alta pureza respaldadas por profesionales y certificación <span className="text-cyan-400">ISO 9001:2015</span>.
+                    Soluciones de alta pureza respaldadas por profesionales especializados y certificación <span className="text-cyan-400">ISO 9001:2015</span>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button
