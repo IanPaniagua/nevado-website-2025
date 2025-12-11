@@ -1,37 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NEVADO - Carbonato de Calcio de Alta Pureza
 
-## Getting Started
+Sitio web corporativo de NEVADO, proveedor líder de carbonato de calcio micronizado en Perú.
 
-First, run the development server:
+## 🚀 Tecnologías
+
+- **Framework**: Next.js 15 (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+- **Email**: Resend
+- **Analytics**: Google Analytics 4
+- **Certificación**: ISO 9001:2015
+
+## 📋 Características
+
+- ✅ Diseño responsive y moderno
+- ✅ SEO optimizado para mercado peruano e internacional
+- ✅ Formulario de contacto con envío de emails
+- ✅ Catálogo de productos con especificaciones técnicas
+- ✅ Google Analytics con consentimiento de cookies
+- ✅ Política de privacidad conforme a Ley N° 29733 (Perú)
+- ✅ Animaciones suaves y efectos visuales
+- ✅ Menú móvil funcional
+
+## 🛠️ Instalación
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Configurar variables de entorno
+cp .env.example .env.local
+# Editar .env.local con tu RESEND_API_KEY
+
+# Ejecutar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build para producción
+npm run build
+
+# Generar documentación
+npm run docs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Estructura del Proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/                    # App Router (Next.js 15)
+│   ├── api/               # API Routes
+│   │   └── contact/       # Endpoint de contacto
+│   ├── politica-privacidad/ # Página de privacidad
+│   ├── layout.tsx         # Layout principal
+│   ├── page.tsx           # Página de inicio
+│   ├── globals.css        # Estilos globales
+│   ├── sitemap.ts         # Generación de sitemap
+│   └── robots.ts          # Configuración robots.txt
+├── components/
+│   ├── layout/            # Header, Footer
+│   ├── sections/          # Hero, About, Products, Contact
+│   ├── ui/                # Componentes shadcn/ui
+│   ├── analytics/         # Google Analytics + Cookie Consent
+│   └── seo/               # Schema.org structured data
+├── data/                  # JSON data files
+│   ├── products.json      # Catálogo de productos
+│   └── company.json       # Información de la empresa
+└── types/                 # TypeScript types
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/
+├── logo.png              # Logo NEVADO
+├── hero-bg.png           # Imagen de fondo hero
+└── product-nevado.png    # Imagen de productos
+```
 
-## Learn More
+## 🔑 Variables de Entorno
 
-To learn more about Next.js, take a look at the following resources:
+```env
+RESEND_API_KEY=re_xxxxxxxxxxxxx  # API key de Resend para emails
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📧 Configuración de Email
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El formulario de contacto utiliza [Resend](https://resend.com) para enviar emails:
 
-## Deploy on Vercel
+1. Crear cuenta en Resend
+2. Obtener API key
+3. Agregar a `.env.local`
+4. Para producción: Verificar dominio en Resend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Nota**: En desarrollo, los emails solo se envían a direcciones verificadas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nevado-website-2025
+## 📊 Google Analytics
+
+1. Crear propiedad GA4
+2. Obtener Measurement ID (G-XXXXXXXXXX)
+3. Actualizar en `src/components/analytics/Analytics.tsx`
+
+## 🎨 Paleta de Colores
+
+- **Primary (Navy Blue)**: `#1e3a8a`
+- **Accent (Cyan)**: `#0ea5e9`
+- **Background**: `#ffffff`
+- **Muted**: `#f1f5f9`
+
+## 📱 Responsive Breakpoints
+
+- Mobile: `< 768px`
+- Tablet: `768px - 1024px`
+- Desktop: `> 1024px`
+
+## 🚢 Despliegue en Vercel
+
+Ver guía completa en [DEPLOY_VERCEL.md](./DEPLOY_VERCEL.md)
+
+```bash
+# Push a GitHub
+git add .
+git commit -m "Ready for deployment"
+git push origin main
+
+# En Vercel:
+# 1. Importar repositorio
+# 2. Agregar RESEND_API_KEY en Environment Variables
+# 3. Deploy
+```
+
+## 📖 Documentación Técnica
+
+Generar documentación con TypeDoc:
+
+```bash
+npm run docs
+```
+
+La documentación se generará en la carpeta `docs/` y puede ser visualizada abriendo `docs/index.html`.
+
+## 🧪 Testing
+
+```bash
+# Lint
+npm run lint
+
+# Build test
+npm run build
+```
+
+## 📄 Licencia
+
+© 2024 NEVADO. Todos los derechos reservados.
+
+## 📞 Contacto
+
+- **Email**: inv.nevadosac@gmail.com
+- **Teléfono**: +51 994286955
+- **Dirección**: Av. Sinchi Roca Mz M lote 6 El Pedregal Jicamarca S.J.L, Perú
+- **Certificación**: ISO 9001:2015
+
+---
+
+Desarrollado con ❤️ usando Next.js y TypeScript
