@@ -54,7 +54,7 @@ export function Contact() {
 
             if (response.ok) {
                 setStatus({ type: 'success', message: 'Gracias por contactarnos. Nos pondremos en contacto con usted a la brevedad.' });
-                setFormData({ name: "", company: "", email: "", phone: "", message: "" });
+                setFormData({ name: "", company: "", email: "", message: "" });
             } else {
                 console.error("Form error:", result);
                 setStatus({ type: 'error', message: 'Hubo un error al enviar el mensaje. Por favor, inténtelo nuevamente en unos minutos.' });
