@@ -19,7 +19,7 @@ export function Products() {
     const products: Product[] = productsData as Product[];
 
     return (
-        <section id="products" className="py-20">
+        <section id="products" className="py-20 bg-white">
             <div className="container mx-auto px-4">
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl mb-4">Catálogo de Productos</h2>
@@ -63,7 +63,7 @@ export function Products() {
                             <CardFooter>
                                 <Dialog>
                                     <DialogTrigger asChild>
-                                        <Button className="w-full bg-slate-900 hover:bg-slate-800">Ver Especificaciones</Button>
+                                        <Button className="w-full bg-primary hover:bg-primary/90">Ver Especificaciones</Button>
                                     </DialogTrigger>
                                     <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
                                         <DialogHeader>

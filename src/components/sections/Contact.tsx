@@ -14,6 +14,7 @@ export function Contact() {
         name: "",
         company: "",
         email: "",
+        phone: "",
         message: "",
     });
 
@@ -53,7 +54,7 @@ export function Contact() {
 
             if (response.ok) {
                 setStatus({ type: 'success', message: 'Gracias por contactarnos. Nos pondremos en contacto con usted a la brevedad.' });
-                setFormData({ name: "", company: "", email: "", message: "" });
+                setFormData({ name: "", company: "", email: "", phone: "", message: "" });
             } else {
                 console.error("Form error:", result);
                 setStatus({ type: 'error', message: 'Hubo un error al enviar el mensaje. Por favor, inténtelo nuevamente en unos minutos.' });
@@ -120,7 +121,7 @@ export function Contact() {
 
                     {/* Form */}
                     <div>
-                        <Card className="shadow-lg border-none">
+                        <Card className="shadow-lg border-2 border-cyan-400/30 animate-[subtle-glow_3s_ease-in-out_infinite]">
                             <CardContent className="p-8">
                                 <h3 className="text-xl font-bold text-primary mb-6">Envíenos un mensaje</h3>
                                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -159,6 +160,18 @@ export function Contact() {
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <Label htmlFor="phone">Teléfono (opcional)</Label>
+                                        <Input
+                                            id="phone"
+                                            name="phone"
+                                            type="tel"
+                                            placeholder="+51 999 999 999"
+                                            value={formData.phone}
+                                            onChange={handleChange}
                                         />
                                     </div>
 
