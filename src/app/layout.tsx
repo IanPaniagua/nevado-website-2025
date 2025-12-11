@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: 'NEVADO - Carbonato de Calcio de Alta Pureza | Perú',
     template: '%s | NEVADO'
   },
-  description: 'Proveedor líder de carbonato de calcio micronizado en Perú. Certificación ISO 9001:2015. Insumos minerales para industrias químicas, pinturas, PVC y más.',
+  description: 'Proveedor líder de carbonato de calcio micronizado en Perú. Certificación ISO 9001:2015. Insumos minerales para industrias químicas, pinturas, PVC y más',
   keywords: [
     'carbonato de calcio',
     'carbonato de calcio Peru',
